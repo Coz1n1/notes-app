@@ -17,7 +17,7 @@ const SignIn = () => {
   const registerHandler = () => {
     if (name != "" && password != "" && email != "") {
       axios
-        .post("http://localhost:3002/register", {
+        .post("https://notes-app-production-4a7e.up.railway.app/register", {
           username: name,
           password: password,
           email: email,
@@ -45,7 +45,7 @@ const SignIn = () => {
   const loginHandler = () => {
     if (name != "" && password != "") {
       axios
-        .post("http://localhost:3002/login", {
+        .post("https://notes-app-production-4a7e.up.railway.app/login", {
           username: name,
           password: password,
         })

@@ -16,7 +16,7 @@ const Note: FC<NodeProps> = ({ data }) => {
 
   const handleDelete = () => {
     axios
-      .post("http://localhost:3002/deleteNote", {
+      .post("https://notes-app-production-4a7e.up.railway.app/deleteNote", {
         username: user,
         title: data.title,
       })
@@ -33,7 +33,7 @@ const Note: FC<NodeProps> = ({ data }) => {
 
   const handleComplete = () => {
     axios
-      .post("http://localhost:3002/completed", {
+      .post("https://notes-app-production-4a7e.up.railway.app/completed", {
         username: user,
         title: data.title,
         description: data.description,

@@ -21,7 +21,7 @@ const GoodNotes = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3002/notes", {
+      .post("https://notes-app-production-4a7e.up.railway.app/notes", {
         username: user,
       })
       .then((response) => {
@@ -33,7 +33,7 @@ const GoodNotes = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3002/completedAll", {
+      .post("https://notes-app-production-4a7e.up.railway.app/completedAll", {
         username: user,
       })
       .then((response) => {
@@ -46,7 +46,7 @@ const GoodNotes = () => {
   const handleAdd = () => {
     if (title != "" && description != "") {
       axios
-        .post("http://localhost:3002/add", {
+        .post("https://notes-app-production-4a7e.up.railway.app/add", {
           username: user,
           title: title,
           description: description,

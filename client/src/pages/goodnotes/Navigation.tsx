@@ -79,7 +79,7 @@ const Navigation: FC<NavigationProps> = ({ notes, completedNotes }) => {
     noteDate: string
   ) => {
     axios
-      .post("http://localhost:3002/restore", {
+      .post("https://notes-app-production-4a7e.up.railway.app/restore", {
         username: noteUser,
         title: noteTitle,
         description: noteDescription,
