@@ -1,4 +1,3 @@
-import React from "react";
 import { BsPen } from "react-icons/bs";
 import { BiNote, BiTask } from "react-icons/bi";
 

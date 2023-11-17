@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, useEffect } from "react";
+import { useState, ChangeEvent, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import axios from "axios";
 import Note from "./Note";

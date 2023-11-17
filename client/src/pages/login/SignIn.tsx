@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent } from "react";
 import Input from "../../components/Input";
 import axios from "axios";
 import { Toaster } from "@/components/ui/toaster";

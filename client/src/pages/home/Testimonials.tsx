@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
 const testimonials = [
@@ -75,10 +75,8 @@ const Testimonials = () => {
                 <span className="text-zinc-500 text-lg font-bold">
                   ,on {testimonials[currentIndex].date}
                 </span>
-                {[...Array(5)].map((e, i) => {
-                  return (
-                    <AiFillStar size={32} className="text-yellow-500" key={i} />
-                  );
+                {[...Array(5)].map(() => {
+                  return <AiFillStar size={32} className="text-yellow-500" />;
                 })}
               </div>
             </div>

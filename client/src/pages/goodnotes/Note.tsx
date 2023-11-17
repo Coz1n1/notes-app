@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC } from "react";
 import { NodeType } from "@/types";
 import { AiOutlineCheck } from "react-icons/ai";
 import { BsTrash2 } from "react-icons/bs";

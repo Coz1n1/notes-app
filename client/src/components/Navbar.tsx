@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ModeToggle } from "./mode-toggle";
 import { useNavigate } from "react-router-dom";
 
