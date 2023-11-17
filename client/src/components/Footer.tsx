@@ -1,4 +1,3 @@
-import React from "react";
 import { GrMail, GrLinkedin, GrGithub } from "react-icons/gr";
 
 const Footer = () => {
