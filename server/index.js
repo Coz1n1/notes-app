@@ -72,14 +72,14 @@ app.post("/login", (req, res) => {
               .status(200)
               .json({ accessToken: accessToken, username: username });
           } else {
-            res.status(400).json({
+            res.json({
               error:
                 "Wrong username or password. Check your combination and try again.",
             });
           }
         });
       } else {
-        res.status(400).json({ error: "User doesn't exists" });
+        res.json({ error: "User doesn't exists" });
       }
     }
   );
@@ -186,6 +186,22 @@ app.post("/restore", (req, res) => {
         res.status(400).json({ error: err });
       } else {
         res.status(200).json(result);
+      }
+    }
+  );
+});
+
+app.post("/update", (req, res) => {
+  const { id, title, description, date } = req.body;
+
+  client.query(
+    "UPDATE Notes SET title=$2, description=$3, date=$4 WHERE ID=$1",
+    [id, title, description, date],
+    (err, result) => {
+      if (err) {
+        res.json({ error: err });
+      } else {
+        res.json({ com: "Row updated" });
       }
     }
   );

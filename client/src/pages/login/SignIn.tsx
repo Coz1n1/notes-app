@@ -13,7 +13,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const { toast } = useToast();
   const navigate = useNavigate();
-
+  //notes-app-production-4a7e.up.railway.app
   const registerHandler = () => {
     if (name != "" && password != "" && email != "") {
       axios
@@ -26,7 +26,7 @@ const SignIn = () => {
           console.log(response);
           toast({
             title: "Info",
-            description: response.data,
+            description: response.data.com,
           });
         })
         .catch((err) => {
